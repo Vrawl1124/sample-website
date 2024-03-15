@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .start{
+            padding: 30px;
+            text-align: center;
+            background-color: black;
+            color: blanchedalmond;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        h1:hover{
+            color: chartreuse;
+        }
+        .nav{
+            text-align: center;
+            padding: 20px 0px 0px;
+        }
+        a{
+            padding: 10px;
+            margin: 5px;
+            color: crimson;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .end{
+            text-align: left;
+            background-color: black;
+            color: gold;
+            padding: 30px;
+        }
+        .div1{
+            border: 1px solid rgb(231, 16, 16);
+            text-align: center;
+            background-color: black;
+            color: blanchedalmond;
+            border-radius: 500px;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+            box-shadow: 0 0 20px rgb(245, 244, 244);  
+            margin-top: 0px;
+            margin-left: 350px;
+            margin-bottom: 0px;
+        }
+        .div2{
+            border: 1px solid rgb(222, 15, 15);
+            text-align: center;
+            background-color: rgb(60, 75, 72);
+            color: blanchedalmond;
+            border-radius: 500px;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+            margin-left: 350px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            box-shadow: 0 0 20px rgb(244, 243, 243);
+        }
+        img{
+            border-radius: 35px;
+        }
+        p{
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .footerlist{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="start">
+            <h1>Vikranth</h1>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <a href="#">Sample</a>
+            </div>
+        </div>
+    </header>
+    <main style="background-color: rgb(213, 220, 15);">
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="div1">
+                        <p>Image 1</p>
+                        <img src="keesaragutta (1).jpg" width="70%" height="400px">
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="div2">
+                        <p>Image 2</p>
+                        <img src="keesaragutta (2).jpg" width="70%" height="400px">
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </section>
+    </main>
+    <footer class="end">
+        &copy; copyrights reserved
+    </footer>
+    
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
+

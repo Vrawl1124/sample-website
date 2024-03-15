@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    color: azure;
+}
+nav , a{
+    text-align: center;
+    padding: 15px;
+    margin-top: -65px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: goldenrod;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    outline: none;
+    box-shadow: 0 0 9px;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+    border: 2px solid rgb(10, 10, 10);
+    text-transform: uppercase;
+    text-decoration: overline underline;
+    border-radius: 50px;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    color: gold;
+}
+footer{
+    text-align: center;
+}
+.heading{
+    background-color: rgb(197, 10, 91);
+    width: 40%;
+    height: 90px;
+    text-align: center;
+    padding-top: 1px;
+    border-radius: 15px;
+}
+.heading:hover{
+    text-decoration: underline;
+    color: chartreuse;
+    font-weight: 700;
+}
+.para{
+    background-color: brown;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: -106px;
+    text-align: center;
+    border-radius: 15px;
+}
+.para:hover{
+    text-decoration: underline;
+    color: chartreuse;
+    font-weight: 800;
+}
